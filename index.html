@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>My Works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="これはMy Worksのデモサイトです">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+      <h1 class="site-title"><a href="index.html"><img src="img/logo.svg" alt="My Work"></a></h1>
+      <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img class="icon" src="./img/icon-instagram.png" alt="インスタグラム">
+              </a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div id="mainvisual">
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+            <img src="img/mainvisual-pc.jpg" alt="メインビジュアル">
+          </picture>
+        </div>
+
+        <section id="about" class="wrapper">
+          <h2 class="sec-title">About</h2>
+          <ul>
+            <li>Asuka Masuda</li>
+            <li>〒123-4567 東京都港区西麻布1-2-3 Xビル2F</li>
+            <li>tel: 03-1234-5678</li>
+            <li>url: www.xxxxxx.jp</li>
+            <li>mail: xxx@xxxxxx.jp</li>
+          </ul>
+          <p>
+            profile: 大学在学時より写真を学ぶ。現在首都圏を中心にロケーションフォトやスタジオ撮影を行う。
+            風景、建物を中心とした撮影を得意とする。趣味はショッピング、サイクリング、読書。
+            休日は愛犬と少し遠くの公園まで散歩に行くのが楽しみ。
+          </p>
+        </section>
+
+        <section id="works" class="wrapper">
+          <h2 class="sec-title">Works</h2>
+          <ul>
+            <li><img src="img/works1.jpg" alt="画像1"></li>
+            <li><img src="img/works2.jpg" alt="画像2"></li>
+            <li><img src="img/works3.jpg" alt="画像3"></li>
+            <li><img src="img/works4.jpg" alt="画像4"></li>
+            <li><img src="img/works5.jpg" alt="画像5"></li>
+            <li><img src="img/works6.jpg" alt="画像6"></li>
+          </ul>
+        </section>
+        
+        <section id="news" class="wrapper">
+          <h2 class="sec-title">News</h2>
+          <dl>
+            <dt>2024.04.07</dt>
+            <dd>デザイン雑誌『XXX Vol.11』に掲載していただきました。</dd>
+            <dt>2024.02.17</dt>
+            <dd>【イベント開催のお知らせ】写真集販売記念サイン会を開催します</dd>
+            <dt>2023.12.01</dt>
+            <dd>2024年3月7日から写真集『monochrome』の販売を開始します。</dd>
+            <dt>2023.11.10</dt>
+            <dd>デザイン雑誌『XXX Vol.10』に掲載していただきました。</dd>
+            <dt>2023.08.20</dt>
+            <dd>【個展開催のお知らせ】2023年9月13日より、アートスペースXXXにて</dd>
+          </dl>
+        </section>
+
+        <section id="contact" class="wrapper">
+          <h2 class="sec-title">Contact</h2>
+          <form action="#" method="post">
+            <dl>
+              <dt><label for="name">Name</label></dt>
+              <dd><input type="text" id="name" name="your-name"></dd>
+              <dt><label for="email">Mail</label></dt>
+              <dd><input type="email" id="email" name="your-email"></dd>
+              <dt><label for="message">Message</label></dt>
+              <dd><textarea id="message" name="your-message"></textarea></dd>
+            </dl>
+            <div class="button"><input type="submit" value="送信"></div>
+          </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+      <p>&copy; 2024 My Work</p>
+    </footer>
+
+</body>
+
+</html>
